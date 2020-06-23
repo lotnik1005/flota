@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularz testowy</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form action="trucks.php" enctype="multipart/form-data" method="POST" class="text-white d-flex justify-content-between align-items-center">
+            <div class="forms">
+              <p>
+                Nazwa: <input type="text" name="truck" id="truck" placeholder="Nazwa">
+              </p>
+              <p>
+                Zdjęcie: <input type="file" name="photo_truck" id="photo_truck" required>
+              </p>
+              <div class="mt-3">
+                Kierowca: <select name="driver" id="driver">
+                  <option value="" disabled>Kierowca</option>
+                  <option value="marek">Marek</option>
+                  <option value="monika">Monika</option>
+                  <option value="wiesiek">Wiesiek</option>
+                </select>
+              </div>
+            </div>
+            <button class="btn btn-success">Dodaj</button>
+          </form>
+    </body>
+</html>
